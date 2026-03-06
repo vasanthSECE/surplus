@@ -1,0 +1,123 @@
+/* How It Works Styles */
+
+.max-w-4xl {
+    max-width: 56rem;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    margin-bottom: 4rem;
+    z-index: 2;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-connector {
+    position: absolute;
+    top: 4rem;
+    left: 1.5rem;
+    width: 2px;
+    height: calc(100% + 1rem);
+    background-color: var(--primary-light);
+    z-index: 0;
+}
+
+.timeline-number {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 4px var(--bg-color), 0 0 0 8px var(--primary-light);
+    z-index: 10;
+    margin-top: 0.5rem;
+}
+
+.timeline-content {
+    margin-left: 2rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-grow: 1;
+    transition: all var(--transition-normal);
+}
+
+.timeline-content:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-light);
+}
+
+@media (min-width: 640px) {
+    .timeline-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.timeline-icon-wrapper {
+    background-color: var(--secondary);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+}
+
+.timeline-desc {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Demo Section */
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}

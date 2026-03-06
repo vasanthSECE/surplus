@@ -1,0 +1,100 @@
+/* About Page Styles */
+
+.page-header {
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+}
+
+.header-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap-4 {
+    gap: 3rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-8 {
+    margin-top: 5rem;
+}
+
+.rounded-lg {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+
+.aspect-video {
+    aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 768px) {
+    .pl-md-4 {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .reverse-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.max-w-3xl {
+    max-width: 48rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mission-quote {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--primary-dark);
+    font-style: italic;
+    line-height: 1.4;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.mission-quote::before {
+    content: '“';
+    font-size: 4rem;
+    color: var(--primary-light);
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    z-index: -1;
+}
